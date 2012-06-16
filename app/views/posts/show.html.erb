@@ -1,0 +1,8 @@
+<h1><%= @post.title %></h1>
+<p><%= @post.content %></p>
+<div>
+  <i>Category:</i> <% @post.tags.each do |tag| %>
+    <%= link_to tag.name, tag_path(:name => tag.name) %>
+  <% end %>
+</div>
+<small><%= @post.created_at %></small>

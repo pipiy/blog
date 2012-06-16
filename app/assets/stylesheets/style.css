@@ -1,0 +1,18 @@
+ul.hmenu {
+  list-style: none;	
+  margin: 0 0 2em;
+  padding: 0;
+}
+
+ul.hmenu li {
+	display: inline;
+}
+
+.my-btn {
+	width: 42px;
+}
+
+.my-textarea {
+	width: 600px;
+	height: 200px;
+}
