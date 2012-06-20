@@ -22,7 +22,7 @@
         <span class="icon-bar"></span>
         <span class="icon-bar"></span>
       </a>
-      <a class="brand" href="/">STUDY with US</a>
+      <a class="brand" href="/">УЧИМСЯ вместе с НАМИ</a>
       <div class="container-fluid nav-collapse">
         <ul class="nav">
 
@@ -30,8 +30,8 @@
             <li><%= link_to tag.name, tag_path(:name => tag.name), :class => css_class %></li>
         <% end %>
 
-          <form class="navbar-search pull-left" action="">
-            <input type="text" class="search-query span2" placeholder="Search">
+          <form class="navbar-search pull-left" action="/search">
+            <input type="text" class="search-query span2" placeholder="Search" name='query'>
           </form>
         </ul>
       </div><!--/.nav-collapse -->
@@ -44,10 +44,10 @@
 <br />
 
 <header class="jumbotron subhead" id="overview">
-  <h1>E-learning tool</h1>
+  <h1>ЭСО</h1>
   <br />
 
-  <p class="lead"> Materials of Electronic Technology</p>
+  <p class="lead"> Материалы электронной техники</p>
   <br />
 </header>
 
@@ -56,22 +56,22 @@
     <div class="span3">
       <div class="well sidebar-nav">
         <ul class="nav nav-list">
-          <li class="nav-header"><h1>Navigation</h1></li>
+          <li class="nav-header"><h2>Навигация</h2></li>
           <ul class="nav nav-list">
             <%= render 'devise/menu/registration_items' %>
             <%= render 'devise/menu/login_items' %>
           </ul>
 
           <div>
-            <h3>Address of the company</h3>
+            <h3>Адрес компании</h3>
             <address>
-              Slobodskaya 145-190<br>
-              Belarus, Minsk, 220025Б<br>
+              Слободская 145-190<br>
+              Беларусь, Минск, 220025Б<br>
               <abbr title="Phone">P:</abbr> (017) 247-23-24
             </address>
             <address>
-              <strong>Full Name</strong><br>
-              Artsiom Slabodnik Vyacheslavovich
+              <strong>Полное имя</strong><br>
+              Артем Слабодник Вячеславович
               <a href="mailto:artem.slabodnik@gmail.com">artem.slabodnik@gmail.com</a>
             </address>
           </div>
@@ -81,9 +81,9 @@
         <%= yield %>
       </div>
     </div><!--/row-->
-
+<p><%= link_to "Добавить статью", new_post_path %></p>
     <footer>
-      <p>&copy; Company 2012</p>
+      <p>&copy; КОМПАНИЯ 2012</p>
     </footer>
   </div> <!-- /container -->
 

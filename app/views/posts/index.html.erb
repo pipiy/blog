@@ -5,10 +5,10 @@
     <i>Category:</i> <%= link_to tag.name, tag_path(:name => tag.name) %>
   <% end %>
 	<p>
-		<span class="label label-success"><%= link_to "Edit Post", edit_post_path(post) %></span>
-		<span class="label label-warning"><%= link_to "Delete Post", post, :confirm => "Are you sure?", :method => :delete %></span>
+		<span class="label label-success"><%= link_to "Редактировать", edit_post_path(post) %></span>
+		<span class="label label-warning"><%= link_to "Удалить", post, :confirm => "Вы уверены?", :method => :delete %></span>
 	</p>
 	<hr />
 <% end %>	
 
-<p><%= link_to "Add a New Post", new_post_path %></p>
+<p><%= link_to "Добавить статью", new_post_path %></p>

@@ -1,0 +1,21 @@
+<h3>Добавить комментарий</h3>
+
+<%= form_for [@post, @comment] do |form| %>
+  <p>
+    <%= form.label :title %>
+  </p>
+  <p>
+    <%= form.text_field :title %>
+  </p>
+
+  <p>
+    <%= form.label :comment %>
+  </p>
+  <p>
+    <%= form.text_area :comment, :rows => 4 %>
+  </p>
+
+  <p>
+    <%= form.submit "Добавить" %>
+  </p>
+<% end %>

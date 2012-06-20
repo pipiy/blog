@@ -5,10 +5,16 @@ class Post < ActiveRecord::Base
 
   acts_as_taggable
 
+  acts_as_commentable
+
   has_many :photos
   accepts_nested_attributes_for :photos
 
   has_many :videos
   accepts_nested_attributes_for :videos
+
+  scope :search, lambda { |query|
+    where("title LIKE '%#{query}%'")
+  }
 end
 

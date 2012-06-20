@@ -1,4 +1,6 @@
-<div>
-  <img src="<%= post.photos.first.file.url %>">
+<div style="display:none">
+  <%= link_to post do %>
+    <%= image_tag post.photos.first.file.url(:medium), :alt => post.title %>
+  <% end %>
 </div>
 

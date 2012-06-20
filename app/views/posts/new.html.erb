@@ -1,4 +1,4 @@
-<h1>Add a New Post</h1>
+<h1>Новая статья</h1>
 
 <%= form_for @post do |f| %>
   <% if @post.errors.any? %>
@@ -24,6 +24,6 @@
     <%= f.text_area :content, :class => "input-xlarge my-textarea"  %>
   </p>
   <p>
-    <%= f.submit "Add a New Post" %>
+    <%= f.submit "Добавить новую статью" %>
   </p>
 <% end %>

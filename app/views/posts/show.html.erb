@@ -5,4 +5,30 @@
     <%= link_to tag.name, tag_path(:name => tag.name) %>
   <% end %>
 </div>
-<small><%= @post.created_at %></small>
+
+<% unless @post.videos.empty? %>
+  <div class='photos'>
+    <h3>Photos:</h3>
+    <%= render :partial => "photo", :collection => @post.photos %>
+  </div>
+<% end %>
+
+<% unless @post.videos.empty? %>
+  <div class='videos'>
+    <h3>Videos:</h3>
+    <%= render :partial => "video", :collection => @post.videos %>
+  </div>
+<% end %>
+
+<% unless @post.comments.empty? %>
+  <div class='comments'>
+    <h3>Comments:</h3>
+    <%= render :partial => "comment", :collection => @post.comments %>
+  </div>
+<% end %>
+
+<div class='comments-form'>
+  <%= render :partial => "comments/new" %>
+</div>
+
+<small>Published at <%= @post.created_at.strftime("%H:%M %m/%d/%Y") %></small>

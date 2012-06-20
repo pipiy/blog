@@ -10,6 +10,7 @@
  *
  *= require_self
  *= require bootstrap_and_overrides
+ *= require video-js
 */
 
 .slides_container {
@@ -21,4 +22,6 @@
   height:270px;
   display:block;
 }
-
+.photos, .videos {
+  margin: 10px 10px 10px 0px;
+}

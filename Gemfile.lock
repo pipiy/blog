@@ -1,3 +1,9 @@
+GIT
+  remote: https://github.com/tonic20/videojs-rails.git
+  revision: 77558d99137f4c78bee3c8d5fc33cd7613df0dfb
+  specs:
+    videojs (3.2.2)
+
 GEM
   remote: https://rubygems.org/
   specs:
@@ -41,6 +47,7 @@ GEM
       multi_json (~> 1.0)
     acts-as-taggable-on (2.3.1)
       rails (~> 3.0)
+    acts_as_commentable (3.0.1)
     addressable (2.2.8)
     arel (3.0.2)
     bcrypt-ruby (3.0.1)
@@ -128,7 +135,7 @@ GEM
     inherited_resources (1.3.1)
       has_scope (~> 0.5.0)
       responders (~> 0.6)
-    journey (1.0.3)
+    journey (1.0.4)
     jquery-rails (2.0.2)
       railties (>= 3.2.0, < 5.0)
       thor (~> 0.14)
@@ -271,6 +278,7 @@ PLATFORMS
 DEPENDENCIES
   activeadmin
   acts-as-taggable-on
+  acts_as_commentable
   capybara
   capybara-webkit
   coffee-rails (~> 3.2.1)
@@ -293,3 +301,4 @@ DEPENDENCIES
   shoulda
   twitter-bootstrap-rails
   uglifier (>= 1.0.3)
+  videojs!
