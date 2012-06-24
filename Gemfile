@@ -9,6 +9,7 @@ gem 'heroku'
 gem 'paperclip'
 gem 'acts_as_commentable'
 gem "videojs", :git => "https://github.com/tonic20/videojs-rails.git"
+gem "cancan"
 
 group :production do
   gem 'pg'
